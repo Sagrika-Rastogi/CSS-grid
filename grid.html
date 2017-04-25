@@ -1,0 +1,113 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="grid.css">
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+
+<div class="container1" id="cont">
+  <div class="box a" id="a"></div>
+  <div class="box b1" id="b1"></div>
+  <div class="box b2" id="b2"></div>
+  <div class="box c1" id="c1"></div>
+  <div class="box c2" id="c2"></div>
+  <div class="box c3" id="c3"></div>
+  <div class="box c4" id="c4"></div>
+  <div class="box d1" id="d1"></div>
+  <div class="box d2" id="d2"></div>
+  <div class="box d3" id="d3"></div>
+  <div class="box d4" id="d4"></div>
+  <div class="box d5" id="d5"></div>
+  <div class="box d6" id="d6"></div>
+  <div class="box d7" id="d7"></div>
+  <div class="box d8" id="d8"></div>  
+</div>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	var w = $(window).width();
+	
+	if (w>1024)
+	{
+		document.getElementById("cont").className = "container1";	
+	}
+	
+	else if (w>720)
+	{
+		document.getElementById("cont").className = "container2";	
+	}
+	
+	else
+	{
+		document.getElementById("cont").className = "container3";	
+	}
+	
+	
+
+	
+	
+});
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+$('.a').click(function(){
+  document.getElementById("a").style.background = getRandomColor();
+});
+
+$('.b1').click(function(){
+  document.getElementById("b1").style.background = getRandomColor();
+});
+$('.b2').click(function(){
+  document.getElementById("b2").style.background = getRandomColor();
+});
+
+$('.c1').click(function(){
+  document.getElementById("c1").style.background = getRandomColor();
+});
+$('.c2').click(function(){
+  document.getElementById("c2").style.background = getRandomColor();
+});
+$('.c3').click(function(){
+  document.getElementById("c3").style.background = getRandomColor();
+});
+$('.c4').click(function(){
+  document.getElementById("c4").style.background = getRandomColor();
+});
+
+$('.d1').click(function(){
+  document.getElementById("d1").style.background = getRandomColor();
+});
+$('.d2').click(function(){
+  document.getElementById("d2").style.background = getRandomColor();
+});
+$('.d3').click(function(){
+  document.getElementById("d3").style.background = getRandomColor();
+});
+$('.d4').click(function(){
+  document.getElementById("d4").style.background = getRandomColor();
+});
+$('.d5').click(function(){
+  document.getElementById("d5").style.background = getRandomColor();
+});
+$('.d6').click(function(){
+  document.getElementById("d6").style.background = getRandomColor();
+});
+$('.d7').click(function(){
+  document.getElementById("d7").style.background = getRandomColor();
+});
+$('.d8').click(function(){
+  document.getElementById("d8").style.background = getRandomColor();
+});
+
+</script>
+</body>
+</html>
